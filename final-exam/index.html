@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <form>
+                <!-- <label for="title">Title</label><br> -->
+                <label for="title_color">Title Color</label><br>
+
+                <input type="color" id="title_color" name="title_color"><br>
+                <input style="height:80px;font-size:14pt;" placeholder="Title" type="text" id="title" name="title"><br>
+                <!-- <label for="message">Message</label><br> -->
+                <input style="height:150px;font-size:14pt;" type="text" placeholder="message" id="message"
+                    name="message"><br>
+                <label for="message_color">Message Color</label><br>
+                <input type="color" id="message_color" name="message_color"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div>
+            <label for="title_display">Display</label><br>
+            <h1 id='title_display'></h1>
+            <label for="message_display">Message:</label><br>
+            <p id='message_display'></p>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+
+    <!-- <script>
+        const textarea = document.getElementById('texta')
+        const title = document.getElementById('title')
+        const title_color = document.getElementById('title_color')
+        const message = document.getElementById('message')
+        const message_color = document.getElementById('message_color')
+        const title_display = document.getElementById('title_display')
+        const message_display = document.getElementById('message_display')
+
+
+
+        title.addEventListener('change', editTitle);
+        message.addEventListener('change', editMessage);
+        title_color.addEventListener('change', changeTitlecolor);
+        message_color.addEventListener('change', changeMessagecolor);
+        textarea.addEventListener('change', updateTextarea)
+
+        function updateTextarea(e) {
+            textarea.textContent = e.target.value;
+        }
+
+
+        function editTitle(e) {
+            title_display.textContent = e.target.value;
+        }
+
+        function editMessage(e) {
+            message_display.textContent = e.target.value;
+        }
+
+        function changeTitlecolor(e) {
+            title_display.style.color = e.target.value;
+        }
+
+        function changeMessagecolor(e) {
+            message_display.style.color = e.target.value;
+        }
+    </script> -->
+
+</body>
+
+</html>

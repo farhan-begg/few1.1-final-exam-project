@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin: 1px;
+
+
+}
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    padding: 5rem;
+    margin: 5rem;
+    border-style: solid;
+
+}
+
+input[type=submit] {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 60px;
+    height: 32px;
+    position: relative;
+    right: -150px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 1;
+}
